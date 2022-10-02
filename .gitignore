@@ -1,0 +1,4 @@
+*.~undo-tree~
+*/target/*
+.lein-failures
+.nrepl-port
