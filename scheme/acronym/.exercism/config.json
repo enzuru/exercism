@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "tongkiat"
+  ],
+  "files": {
+    "solution": [
+      "acronym.scm"
+    ],
+    "test": [
+      "test.scm",
+      "test-util.ss"
+    ],
+    "example": [
+      ".meta/example.scm"
+    ]
+  },
+  "blurb": "Convert a long phrase to its acronym",
+  "source": "Julien Vanier",
+  "source_url": "https://github.com/monkbroc"
+}

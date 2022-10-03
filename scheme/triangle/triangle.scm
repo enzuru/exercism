@@ -15,4 +15,4 @@
       (cond ((equal? a b c) 'equilateral)
             ((or (equal? a b) (equal? a c) (equal? b c)) 'isosceles)
             (#t 'scalene))
-      (error "Invalid" 0)))
+      (error "triangle" "invalid triangle")))
