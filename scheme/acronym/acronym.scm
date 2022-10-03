@@ -1,4 +1,19 @@
-(import (rnrs) (ice-9 string-fun))
+(import (rnrs))
+
+;; From the GNU Guile project
+(define (string-replace-substring str substring replacement)
+  (let ((sublen (string-length substring)))
+    (with-output-to-string
+      (lambda ()
+        (let lp ((start 0))
+          (cond
+           ((string-contains str substring start)
+            => (lambda (end)
+                 (display (substring/shared str start end))
+                 (display replacement)
+                 (lp (+ end sublen))))
+           (else
+            (display (substring/shared str start)))))))))
 
 (define (nth n l)
   (if (or (> n (length l)) (< n 0))
