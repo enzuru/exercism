@@ -9,4 +9,3 @@ Experimenting with a universal style that exhibits the following attributes:
 - Minimalist (stick to functions that exist in R7RS where possible)
 - Functional (imperfect in Emacs Lisp)
 - Lexical scope (`;; -*- lexical-binding: t -*-` in Emacs Lisp)
-- Modernizations that improve readability (like Clojure's `first` and `rest`)
